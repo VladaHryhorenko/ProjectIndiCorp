@@ -36,7 +36,7 @@ a{
     height: 100%;
   }
 
-  .header-alignment{
+  .header-alignment, .section-subscribe-align{
     width: 1040px;
     margin: 0 auto;
     display: flex;
@@ -607,6 +607,66 @@ a{
     justify-content: center;
   }
 
+  .section-subscribe-form{
+    padding: 20px 0px;
+    background: linear-gradient(to top, #252B42 50%, #fff 50%);
+  }
+
+  .subscribe-form-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #16697A;
+    padding: 33px 50px;
+  }
+
+  .subscribe-form-wrapper h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #fff;
+    width: 35%;
+    margin-right: 30px;
+  }
+
+  .form-wrapper{
+    width: 50%;
+  }
+
+  .form-inner-wrapper{
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+  }
+
+  .subscribe-input{
+    border: 1px solid #E5E5E5;
+    border-right: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400px;
+    width: 75%;
+    outline: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .subscribe-button{
+    border: 1px solid #E5E5E5;
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    width: 25%;
+    background-color: #FFA62B;
+    color: #fff;
+    outline: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
   
 
   @media screen and (max-width: 1140px){
@@ -614,7 +674,7 @@ a{
       margin: 50px 0px;
     }
 
-    .header-alignment, .section-statistic-align{
+    .header-alignment, .section-statistic-align, .section-subscribe-align{
       width: 900px;
     }
 
@@ -658,7 +718,7 @@ a{
       margin: 50px 0px;
     }
 
-    .header-alignment, .section-statistic-align{
+    .header-alignment, .section-statistic-align, .section-subscribe-align{
       width: 768px;
     }
 
@@ -718,6 +778,18 @@ a{
       margin-left: 50px;
     }
 
+    .subscribe-form-wrapper h1{
+      width: 45%
+    }
+
+    .subscribe-input{
+      width: 65%;
+    }
+
+    .subscribe-button{
+      width: 35%;
+    }
+
   }
 
   @media screen and (max-width: 830px){
@@ -732,7 +804,7 @@ a{
       width: 100%;
     }
 
-    .header-alignment, .section-statistic-align{
+    .header-alignment, .section-statistic-align, .section-subscribe-align{
       width: 600px;
     }
 
@@ -878,6 +950,21 @@ a{
       margin-bottom: 30px;
     }
 
+    .subscribe-form-wrapper{
+      flex-direction: column;
+      justify-content: center;
+      text-align: center ;
+    }
+    .subscribe-form-wrapper h1{
+      width: 80%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    .form-wrapper{
+      width: 100%;
+    }
+
   }
   
   @media screen and (max-width: 650px){
@@ -929,12 +1016,22 @@ a{
       width: 50%;
     }
 
+    .subscribe-form-wrapper h1{
+      width: 100%;
+    }
+
+    .section-subscribe-align{
+      width: 450px;
+      margin: 0 auto;
+    }
+
   }
 
   @media screen and (max-width: 480px){
     
     .section-header{
-      min-width: 350px;
+      width: 100%;
+      min-width: 349px;
     }
 
     .header-wrapper{
@@ -943,11 +1040,11 @@ a{
     }
 
     .header-alignment {
-      width: 345px;
+      width: 340px;
     }
 
     .section-statistic-align{
-      width: 275px;
+      width: 340px;
     }
 
     .header-content-wrapper{
@@ -1025,7 +1122,7 @@ a{
 
     .frst-sec-title{
       display: inline-block;
-      font-size: 40px;
+      font-size: 39px;
       font-weight: 700;
       line-height: 57px;
     }
@@ -1089,13 +1186,70 @@ a{
 
     .logo-img{
       width: 100%;
-      size: 100%
-      ;
+      size: 100%;
     }
 
+    .section-subscribe-form{
+      width: 100%;
+      background: #16697A;
+    }
 
+    .section-subscribe-align{
+      width: 100%;
+    }
+
+    .subscribe-form-wrapper{
+      background-color: transparent;
+      margin: 0px 30px;
+      padding: 33px 0;
+    }
+
+    .logo{
+      margin-right: 0px;
+    }
 
   }
+
+  @media screen and (max-width: 370px){
+    .section-header{
+      width: 100%;
+      min-width: 275px;
+    }
+
+    .header-wrapper{
+      background: #FAFAFA; 
+      width: 100%;
+    }
+
+    .header-alignment {
+      width: 275px;
+    }
+
+    .section-statistic-align{
+      width: 275px;
+    }
+
+    .section-about-service-align{
+      width: 275px;
+    }
+
+    .form-inner-wrapper{
+      flex-direction: column;
+    }
+
+    .subscribe-input{
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .subscribe-button{
+      width: 100%;
+      border-radius: 5px;
+    }
+
+  }
+
 
   
 
