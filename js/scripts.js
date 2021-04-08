@@ -15,7 +15,21 @@ $(document).ready(function(){
         $('.hamburger').toggleClass('is-active');
     })
 
-    
+    $('.video-icon').on('click', () => {
+        $('.video-icon').toggleClass('video-img');
+        $('.video-overlay').toggleClass('video-img');
+        $("#video1")[0].src += "?autoplay=1";
+        $("#video2")[0].src += "?autoplay=1";
+    })
+
+    $('.video-overlay').on('click', () => {
+        $('.video-icon').toggleClass('video-img');
+        $('.video-overlay').toggleClass('video-img');
+        $("#video1")[0].src += "?autoplay=1";
+        $("#video2")[0].src += "?autoplay=1";
+    })
 
     
+
+
 });
