@@ -842,15 +842,15 @@ a{
     border-radius: 5px;
   }
 
+  .hover-class-link:hover{
+    background-color:#fff;
+    color: #FFA62B;
+  }
+
   .contact-link:active{
     background-color: #fff;
     border: 1px solid #737373;
     color: #737373;
-  }
-
-  .contact-link.hover-class-link:hover{
-    background-color:#fff;
-    color: #FFA62B;
   }
 
   .section-footer{
