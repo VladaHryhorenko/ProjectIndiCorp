@@ -270,8 +270,8 @@ a{
   } 
 
   .hover-link:hover{
-    border: 1px solid #014d5c;
-    color: #014d5c;
+    border: 1px solid #737373;
+    color: #737373;
   }
 
   .hover-active-link:hover{
@@ -540,6 +540,7 @@ a{
 	}
 
   .video-icon{
+    cursor: pointer;
     z-index: 2;
     width: 64px;
     height: 64px;
@@ -705,6 +706,7 @@ a{
     outline: none;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    cursor: pointer;
   }
 
   .hover-subscribe-button:hover{
