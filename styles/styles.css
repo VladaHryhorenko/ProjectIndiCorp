@@ -432,10 +432,17 @@ a{
     align-items: center;
   }
 
-  .statictic-icon-wrapper{
+  .statistic-icon-wrapper{
     width: 48px;
     height: 48px;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .statistic-icon-wrapper svg{
+    width: 100%;
   }
 
   .statistic-item h2{
